@@ -1,0 +1,190 @@
+{
+  "Users": [
+    {
+      "email": "user3@mail.ru",
+      "password": "password3",
+      "name": "user3",
+      "id": 3
+    },
+    {
+      "email": "heiby@heiby",
+      "password": "heiby1",
+      "name": "heiby",
+      "id": 5
+    },
+    {
+      "email": "a@a",
+      "password": "aaaaaa",
+      "name": "a@a",
+      "id": 6
+    },
+    {
+      "email": "c@c",
+      "password": "cccccc",
+      "name": "userC",
+      "id": 8
+    },
+    {
+      "email": "user31@mail.ru",
+      "password": "111111",
+      "name": "Максим",
+      "id": 9
+    }
+  ],
+  "Tasks": [
+    {
+      "HomeTask": [
+        {
+          "task": "123",
+          "urgency": false,
+          "id": 1
+        },
+        {
+          "task": "ываававы",
+          "urgency": false,
+          "id": 2
+        }
+      ],
+      "TodayTask": [
+        {
+          "task": "Do something workfdsfdsfsd",
+          "urgency": true,
+          "id": 1,
+          "editing": false
+        },
+        {
+          "task": "work 3fsdfsdfdsfsd",
+          "urgency": false,
+          "id": 2,
+          "editing": false
+        }
+      ],
+      "WorkTask": [
+        {
+          "task": "fdsfds",
+          "urgency": false,
+          "id": 1
+        }
+      ],
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "HomeTask": [
+        {
+          "task": "3",
+          "urgency": false,
+          "id": 1
+        }
+      ],
+      "TodayTask": [
+        {
+          "task": "heiby today 1",
+          "urgency": false,
+          "id": 1
+        },
+        {
+          "task": "heiby today 2",
+          "urgency": false,
+          "id": 2
+        },
+        {
+          "task": "heiby today 3",
+          "urgency": false,
+          "id": 3
+        }
+      ],
+      "WorkTask": [
+        {
+          "task": "heiby work ",
+          "urgency": false,
+          "id": 1
+        }
+      ],
+      "userId": "5",
+      "id": 5
+    },
+    {
+      "HomeTask": [
+        {
+          "task": "dsadsadas",
+          "urgency": false,
+          "id": 1
+        }
+      ],
+      "TodayTask": [
+        {
+          "task": "adsdsaавыавыа",
+          "urgency": false,
+          "id": 1,
+          "editing": false
+        },
+        {
+          "task": "47ateq6dфыввфы",
+          "urgency": false,
+          "id": 2,
+          "editing": false
+        },
+        {
+          "task": "dsfsdfsddsadsadsa21312321",
+          "urgency": false,
+          "id": 3,
+          "editing": false
+        },
+        {
+          "task": "sfdfds",
+          "urgency": false,
+          "id": 4
+        }
+      ],
+      "WorkTask": [
+        {
+          "task": "Захватить парочку колб бунзена",
+          "urgency": false,
+          "id": 1
+        }
+      ],
+      "userId": 6,
+      "id": 6
+    },
+    {
+      "HomeTask": [
+        {
+          "task": "Задача \"Дом\" добавлена из сервера",
+          "urgency": false,
+          "id": 1
+        }
+      ],
+      "TodayTask": [
+        {
+          "task": "Задача \"сегодня\" добавлена из сервера",
+          "urgency": false,
+          "id": 1,
+          "editing": false
+        }
+      ],
+      "WorkTask": [
+        {
+          "task": "Задача \"Работа\" добавлена из сервера",
+          "urgency": false,
+          "id": 1
+        }
+      ],
+      "userId": 8,
+      "id": 8
+    },
+    {
+      "HomeTask": [],
+      "TodayTask": [
+        {
+          "task": "fsdfds",
+          "urgency": false,
+          "id": 1
+        }
+      ],
+      "WorkTask": [],
+      "userId": 9,
+      "id": 9
+    }
+  ]
+}

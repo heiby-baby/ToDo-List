@@ -1,0 +1,30 @@
+
+<ul>
+  <li *ngFor="let task of tasks; let i = index">
+    <div class="Task-block">
+      <div class="task-info">
+        <div *ngIf="!task.editing; else editMode">
+          {{ task.task }}
+        </div>
+        <ng-template #editMode>
+          <input [(ngModel)]="task.task" (keyup.enter)="updateTask()">
+        </ng-template>
+      </div>
+      <div class="task-actions">
+        <button class="edit-btn" (click)="editTask(i)">
+          {{ task.editing ? 'Сохранить' : 'Редактировать' }}
+        </button>
+        <button class="delete-btn" (click)="removeTask(i)">Удалить</button>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<div class="add-task-container">
+  <input [(ngModel)]="newTask.task" placeholder="Добавить новую задачу">
+  <button class="add-task-btn"  (click)="addTask()">
+    Добавить
+  </button>
+</div>
+
+

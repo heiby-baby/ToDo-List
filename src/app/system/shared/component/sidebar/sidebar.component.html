@@ -1,0 +1,33 @@
+<div class="main-wrapper">
+    <div class="app">
+        <aside class="sidebar">
+          <div class="profile dropdown">
+            <a class="nav-link dropdown-toggle" role="button">
+              <span class="Hello-user" (click)="isOpen= !isOpen">
+                Привет, {{user.name}}
+              </span>
+            </a>
+            <div class="dropdown-menu profile-dropdown-menu" *ngIf="isOpen">
+              <a class="dropdown-item" href="https://vk.com/lover_tea_and_paper">
+                <i class="autor"></i>Автор
+              </a>
+              <a class="dropdown-item" (click)="onLogout()">
+                <i class="power-off"></i>Выйти
+              </a>
+              <a class="dropdown-item" (click)="DeleteUser()">
+                <i class="power-off"></i>Удалить аккаунт
+              </a>
+            </div>
+          </div>
+
+
+          <a routerLink="today">Сегодня</a>
+          <a routerLink="work">Работа</a>
+          <a routerLink="home">Дом</a>
+        </aside>
+    </div>
+</div>
+
+
+
+

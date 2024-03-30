@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 300px;
+  margin: 13.5% auto;
+}
+
+.Log-in {
+  float: left;
+  color: black;
+  font-size: 21px;
+}
+
+.has-error{
+  text-align: center;
+  font-size: 13px;
+}
+
+/*стили для формы*/
+form {
+  position: relative;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px 0;
+  outline: none;
+}
+.input{
+  background: transparent;
+  border: 2px solid black;
+  color:black;
+}
+.input-submit {
+  background: #A62000;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+.input-submit:active{
+  transform: translateY(1px);
+  background: rgba(166, 32, 0, 0.84);
+}
+.input-submit:hover{
+  color: #000000;
+}
+
+/*Кнопка на регистрацию*/
+.button {
+  align-content: center;
+  float: right;
+  color: #000000;
+  border: 2px solid black;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.button:hover {
+  color: #A62000;
+}
+.button:active{
+  transform: translateY(1px);
+  background: #fac390;
+}
+
+

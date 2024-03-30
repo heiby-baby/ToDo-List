@@ -1,0 +1,55 @@
+<body [ngClass]="{
+  'name-has-error' : form.get('name')?.invalid && form.get('name')?.touched,
+  'login-has-error': form.get('email')?.invalid && form.get('email')?.touched,
+  'password-has-error': form.get('password')?.invalid && form.get('password')?.touched,
+  'agree-has-error': form.get('agree')?.invalid && form.get('agree')?.touched}"
+>
+<div class="wrapper">
+  <h3 class="sign-in">Sign Up</h3>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" action="#">
+    <input class="input" type="text" id="name" placeholder="Name" formControlName="name" />
+    <div class="has-error">
+      <span *ngIf="form.get('name')?.touched && form.get('name')?.invalid">
+        Имя не может быть пустым
+      </span>
+    </div>
+    <input class="input" type="email" id="email" placeholder="Email" formControlName='email' />
+    <div class="has-error">
+        <span *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+          <span *ngIf="form.get('email')?.errors?.['required']"> Email не может быть пустым. </span>
+          <span *ngIf="form.get('email')?.errors?.['email']"> Введите корректный email. </span>
+          <span *ngIf="form.get('email')?.errors?.['forbiddenEmail']"> Email занят </span>
+        </span>
+    </div>
+    <input class="input" type="password"  id="password" placeholder="Password" formControlName="password"/>
+    <div class="has-error">
+      <span *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+          <span *ngIf="form.get('password')?.errors?.['required']"> Пароль не может быть пустым </span>
+          <span *ngIf="form.get('password')?.errors?.['minlength']">
+            Пароль должен содержать минимум {{ form.get('password')?.errors?.['minlength']?.requiredLength }} символов
+            Сейчас {{ form.get('password')?.errors?.['minlength']?.actualLength }} символов
+          </span>
+        </span>
+    </div>
+    <div class="checkbox-wrapper">
+      <div class="checkbox-wrapper-text">I agree to the terms and conditions</div>
+      <input type="checkbox" name="agreeTerms" formControlName="agree">
+    </div>
+    <span *ngIf="form.get('agree')?.touched && form.get('agree')?.invalid">
+      <div class="has-error">
+        Подтвердите согласие
+      </div>
+    </span>
+    <input class="input-submit" type="submit" value="Sign up" [disabled]="!form.valid"/>
+    <div class="button" (click)="JumpToLogIn()">
+      Log in
+    </div>
+    <div
+      class="alert alert-{{message.type}}"
+      *ngIf="message.text">
+      {{message.text}}
+    </div>
+  </form>
+</div>
+</body>
+
